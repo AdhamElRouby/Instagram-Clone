@@ -1,10 +1,12 @@
 @use '../../sass/colors' as c;
+@use '../../sass/mixins' as m;
 
 .post-container {
     margin-bottom: 40px;
     
     .post-img-container {
         margin: 4px 0 12px;
+        @include m.center-flex();
         overflow: hidden;
         
         img {
