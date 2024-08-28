@@ -1,0 +1,51 @@
+@use '../../sass/colors' as c;
+@use '../../sass/mixins' as m;
+
+footer {
+    max-width: 1024px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 12px;
+    padding: 0rem 1rem;
+    color: c.$gray;
+    line-height: 20px;
+    flex: 1;
+
+    .top-container {
+        width: 100%;
+        margin-bottom: 1rem;
+        a {
+            margin-left: 1rem;
+            cursor: pointer;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .bottom-container {
+        width: 100%;
+        @include m.center-flex();
+        
+        select {
+            background: transparent;
+        }
+
+        p {
+            margin-left: 1rem;
+            a {
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        display: none;
+    }
+}

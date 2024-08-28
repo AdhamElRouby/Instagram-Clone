@@ -1,0 +1,84 @@
+@use '../../sass/colors' as c;
+
+.post-container {
+    margin-bottom: 40px;
+    
+    .post-img-container {
+        margin: 4px 0 12px;
+        overflow: hidden;
+        
+        img {
+            border-radius: 4px;
+        }
+    }
+}
+
+.post-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-container {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        .profile-name {
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .date {
+            color: c.$gray;
+        }
+    }
+
+    .right-container {
+        cursor: pointer;
+    }
+}
+
+.post-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: auto;
+
+    .icons-container {
+        display: flex;
+        font-size: 18px;
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+
+    .good-container {
+        span {
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+
+    .view-comments-container {
+        color: c.$gray;
+        cursor: pointer;
+    }
+}
+
+.skeleton-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+
+    .top {
+        display: flex;
+        gap: 8px;
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}

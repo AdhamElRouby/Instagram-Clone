@@ -1,0 +1,16 @@
+.comment-item-container {
+    display: flex;
+    gap: 8px;
+
+    .right {
+        .comment-top {
+            font-size: 14px;
+
+            a {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+@use './sass/colors' as c;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3f3f40;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.light-a {
+    cursor: pointer;
+    color: c.$blue-link;
+
+    &:active {
+        color: lighten($color: c.$blue-link, $amount: 10);
+    }
+}
+
+.dark-a {
+    cursor: pointer;
+    color: c.$dark-blue;
+
+    &:active {
+        color: lighten($color: c.$dark-blue, $amount: 10);
+    }
+}

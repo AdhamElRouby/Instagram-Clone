@@ -1,0 +1,75 @@
+@use '../../sass/colors' as c;
+@use '../../sass/mixins' as m;
+
+.top-box {
+    width: 100%;
+    @include m.center-flex(column);
+    border: 1px solid c.$gray;
+    border-radius: 3px;
+    padding: 24px;
+
+    .img-container {
+        img {
+            height: 96px;
+            cursor: pointer;
+        }
+    }
+
+    .or-container {
+        margin-top: 16px;
+        @include m.center-flex();
+        width: 100%;
+
+        .line {
+            height: 1px;
+            background-color: #A0AEC0;
+            flex: 1;
+
+            &.left {
+                margin-right: 1rem;
+            }
+
+            &.right {
+                margin-left: 1rem;
+            }
+
+        }
+
+    }
+
+    .google-login {
+        margin-top: 20px;
+        @include m.center-flex();
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+    }
+
+    .forgot-password {
+        margin-top: 16px;
+        font-size: 12px;
+    }
+
+    form {
+        width: 100%;
+        @include m.center-flex(column);
+    }
+
+}
+
+.bottom-box {
+    width: 100%;
+    margin-top: 12px;
+    padding: 20px;
+    border: 1px solid c.$gray;
+    border-radius: 3px;
+    @include m.center-flex();
+
+    p {
+        margin: 0;
+    }
+}

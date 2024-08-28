@@ -1,0 +1,40 @@
+@use '../../sass/mixins' as m;
+
+.auth-container {
+    flex: 1;
+    width: 100%;
+    @include m.center-flex();
+    
+    .left-section {
+        img {
+            height: 650px;
+        }
+    }
+    
+    .right-section {
+        @include m.center-flex(column);
+        font-size: 14px;
+    }
+    
+    .get-app-container {
+        margin-top: 1rem;
+        @include m.center-flex(column);
+    }
+    
+    .app-logo-container {
+        @include m.center-flex();
+        gap: 0 10px;
+
+        img {
+            height: 2.5rem;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-section {
+        display: none;
+    }
+}
