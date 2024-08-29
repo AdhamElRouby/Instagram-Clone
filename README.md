@@ -3,13 +3,13 @@
 A Full-stack Instagram clone built with React.js and Firebase, featuring user authentication (login, signup, reset password), following other users, creating and managing posts, and commenting, offering a full social media experience.
 
 
-<!--
+
 <div align="center">
 
-<img src="./public/assets/to-do-list.gif" alt="App Demo">
+<img src="./public/img/demo.gif" alt="App Demo">
 
 </div>
--->
+
 
 ## Tech Stack
 
