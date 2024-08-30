@@ -58,7 +58,7 @@ Please note that all images, comments, and post captions you upload to the web a
 
 For users signing in with **email**, only your email address will be visible to the developer, while your **password** is securely managed by Firebase and remains inaccessible.
 
-For users signing in with **Google**, the login process will provide the application with your **email address**, **profile picture**, and basic account information. The developer will only utilize **the email address**, **username**, **profile picture** to create your user profile, and no other data will be accessed or used without **your explicit consent**.
+For users signing in with **Google**, the login process will provide the application with your **email address**, **profile picture**, and basic account information. The developer will only utilize **the email address**, **username**, and **profile picture** to create your user profile, and no other data will be accessed or used without **your explicit consent**.
 
 **Your privacy and data security are paramount.**
 
