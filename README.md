@@ -67,7 +67,7 @@ For users signing in with **Google**, the login process will provide the applica
 Clone the project
 
 ```bash
-  git clone https://github.com/AdhamElRouby/React-Instagram-Clone
+  git clone https://github.com/AdhamElRouby/React-Instagram-Clone.git
 ```
 
 Go to the project directory
